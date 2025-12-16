@@ -1,0 +1,74 @@
+jalapeno/
+├── README.md
+├── QUICKSTART.md
+├── CMakeLists.txt
+├── setup.py
+├── init.py
+├── examples/
+│   ├── quick_start.py
+│   ├── layer_streaming.py
+│   ├── llama_streaming.py
+│   ├── llama2_13b_streaming.py
+│   ├── llama_with_kv_cache.py 
+│   ├── integrated_example.py
+│   ├── whisper_large_edge.py
+│   ├── adaptive_prefetch_quantize.py
+│   └── model_surgery_demo.py
+├── include/
+│   ├── jalapeno/
+│   │   ├── memory_manager.hpp
+│   │   ├── layer_streamer.hpp
+│   │   ├── tensor.hpp
+│   │   ├── adaptive_quant.py
+│   │   ├── kv_cache.hpp
+│   │   ├── kv_cache_manager.hpp
+│   │   ├── markov_prefetcher.hpp
+│   │   └── model_surgeon.hpp
+├── src/
+│   ├── core/
+│   │   ├── tensor.cpp
+│   │   ├── memory_manager.cpp
+│   │   ├── memory_orchestrator.cpp
+│   │   ├── memory_manager.cpp
+│   │   ├── layer_streamer.cpp
+│   │   ├── async_executor.cpp
+│   │   ├── hardware_profiler.cpp
+│   │   ├── kv_cache_manager.cpp
+│   │   ├── markov_prefetcher.cpp
+│   │   ├── model_surgeon.cpp
+│   │   ├── unified_tensor.cpp
+│   │   └── paging_policy.cpp
+│   ├── cuda/
+│   │   ├── kernels.cu
+│   │   ├── memory_ops.cu
+│   │   ├── quantization.cu
+│   │   ├── quantization_kernels.cuh
+│   │   └── quantization_kernels.cu
+│   ├── kv_cache/
+│   │   ├── adaptive_cache.cpp
+│   │   └── compression.cpp
+│   └── scheduler/
+│       ├── heterogeneous_scheduler.cpp
+│       └── async_executor.cpp
+├── python/
+│   ├── jalapeno/
+│   │   ├── __init__.py
+│   │   ├── Try_Python_API.py
+│   │   ├── runtime.py
+│   │   ├── model_loader.py
+│   │   ├── kv_cache.py
+│   │   ├── layer_streamer.py
+│   │   ├── markov_prefetcher.py
+│   │   ├── quantization.py
+│   │   ├── model_surgery.py
+│   │   └── integrated_system.py
+├── runtime/
+│   ├── async_executor.cpp
+├── benchmarks/
+│   ├── memory_benchmark.py
+│   └── quantization_benchmark.py
+└── tests/
+    ├── test_tensor.cpp
+    ├── test_memory_manager.cpp
+    ├── test_layer_streamer.py
+    └── test_kv_cache.py
