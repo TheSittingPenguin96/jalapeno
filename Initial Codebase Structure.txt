@@ -15,7 +15,6 @@ jalapeno/
 │   ├── adaptive_prefetch_quantize.py
 │   └── model_surgery_demo.py
 ├── include/
-│   ├── jalapeno/
 │   │   ├── memory_manager.hpp
 │   │   ├── layer_streamer.hpp
 │   │   ├── tensor.hpp
