@@ -28,7 +28,6 @@ jalapeno/
 │   │   ├── tensor.cpp
 │   │   ├── memory_manager.cpp
 │   │   ├── memory_orchestrator.cpp
-│   │   ├── memory_manager.cpp
 │   │   ├── layer_streamer.cpp
 │   │   ├── async_executor.cpp
 │   │   ├── hardware_profiler.cpp
