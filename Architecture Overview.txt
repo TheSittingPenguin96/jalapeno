@@ -1,0 +1,32 @@
+┌─────────────────────────────────────────────────────────────┐
+│                    Application Layer                        │
+│                    (PyTorch/Hugging Face)                   │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+┌───────────────────────▼─────────────────────────────────────┐
+│                    Jalapeño API                             │
+│  • jl.load_model()                                         │
+│  • jl.generate()                                           │
+│  • jl.memory_stats()                                       │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+┌───────────────────────▼─────────────────────────────────────┐
+│                 Core Components                             │
+├─────────────────────────────────────────────────────────────┤
+│  1. Memory Orchestrator      │  2. Model Partitioner       │
+│     • Unified Tensor Space   │     • Layer Profiler        │
+│     • Predictive Prefetcher  │     • Cost Analyzer         │
+│     • LRU/OPT Paging         │     • DAG Optimizer         │
+├─────────────────────────────────────────────────────────────┤
+│  3. KV Cache Manager        │  4. Compute Dispatcher       │
+│     • Adaptive Compression   │     • Device Selector       │
+│     • Context Eviction       │     • Async Executor        │
+│     • Frequency-based Cache  │     • Pipeline Scheduler    │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+┌───────────────────────▼─────────────────────────────────────┐
+│                Hardware Abstraction Layer                   │
+│  • CUDA/NVMM (NVIDIA)       • ROCm (AMD)                   │
+│  • DirectML (Windows)       • Vulkan Compute               │
+│  • OpenCL                   • OneAPI (Intel)               │
+└─────────────────────────────────────────────────────────────┘
