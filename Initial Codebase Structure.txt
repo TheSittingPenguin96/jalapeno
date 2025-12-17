@@ -50,7 +50,6 @@ jalapeno/
 │       ├── heterogeneous_scheduler.cpp
 │       └── async_executor.cpp
 ├── python/
-│   ├── jalapeno/
 │   │   ├── __init__.py
 │   │   ├── Try_Python_API.py
 │   │   ├── runtime.py
